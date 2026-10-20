@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "email": "aarav@example.com",
+    "department": "Engineering",
+    "role": "Software Engineer",
+    "phone": "9000000001",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Merin Maria",
+    "email": "vincentmerin17@gmail.com",
+    "department": "Finance",
+    "role": "Software Developer",
+    "phone": "9845913005",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "Amogh",
+    "email": "amogh@gmal.com",
+    "department": "Human Resources",
+    "role": "IT",
+    "phone": "987657864",
+    "status": "Active"
+  }
+]

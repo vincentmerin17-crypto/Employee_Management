@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <title>Employee Management System</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Employee Management System</h1>
+    <p>Manage your employee records</p>
+  </header>
+
+  <main>
+    <section class="summary">
+      <h2>Total Employees: <span id="totalCount">0</span></h2>
+    </section>
+
+    <section>
+      <h2>Add or Edit Employee</h2>
+
+      <form id="employeeForm">
+        <input type="hidden" id="employeeId">
+
+        <label for="name">Full Name</label>
+        <input id="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="department">Department</label>
+        <select id="department" required>
+          <option value="">Select department</option>
+          <option>Engineering</option>
+          <option>Human Resources</option>
+          <option>Finance</option>
+          <option>Marketing</option>
+          <option>Operations</option>
+          <option>Design</option>
+        </select>
+
+        <label for="role">Job Title</label>
+        <input id="role" required>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" required>
+
+        <label for="status">Status</label>
+        <select id="status" required>
+          <option>Active</option>
+          <option>On Leave</option>
+          <option>Inactive</option>
+        </select>
+
+        <p id="formError" role="alert"></p>
+
+        <button type="submit" id="saveBtn">
+          Save Employee
+        </button>
+
+        <button type="button" id="cancelBtn">
+          Cancel
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Employee Directory</h2>
+
+      <label for="search">Search Employees</label>
+      <input
+        id="search"
+        placeholder="Search name, role or department"
+      >
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID / Name</th>
+            <th>Department</th>
+            <th>Job Title</th>
+            <th>Status</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="employeeRows">
+          <tr>
+            <td colspan="6">Loading employees...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
